@@ -16,16 +16,16 @@ background-attachment: fixed;
 }
 
 .bloque {
-text-align: center;
+text-align: var(--alineo);
 }
 
 .box {
-background-color: rgba(156, 198, 214, 0.863);
+background-color: var(--card);
 border-radius: 8px;
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+box-shadow: var(--sombra);
 width: 320px;
 margin: 15px;
-text-align: center;
+text-align: var(--alineo);
 padding-bottom: 20px;
 display: inline-block;
 }
@@ -40,22 +40,32 @@ filter: drop-shadow(2px 4px 10px rgb(26, 69, 139)  );
 div >p.titulo{
 margin: 30px 0;
 font-size: 30px;
-color: rgb(56, 76, 129);
+color: var(--titulo)
 }
 
 .bloque p {
 color: black;
 padding: 0 25px 20px;
 font-size: 17px;
-text-align: center;
+text-align: var(--alineo);
 }
 
 .boton {
 display: block;
 text-decoration: none;
-background: rgb(0, 42, 54);
-color: white;
+background: var(--boton);
+color: var(--color-text-boton);
 padding: 16px 20px;
 margin: 35px 70px;
 border-radius: 10px;
+}
+
+:root{
+  --fondo: url(img/escenario.jpg);
+  --sombra: 0 5px 10px rgba(0, 0, 0, 0.5);
+  --titulo: rgb(56, 76, 129);
+  --boton: rgb(0, 42, 54);
+  --color-text-boton: white;
+  --card: rgba(156, 198, 214, 0.863);
+  --alineo: center;
 }
